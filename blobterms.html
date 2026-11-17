@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Magis TV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #08090D;
+            color: #9CA3AF;
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: #EF8805;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #FFA534;
+            text-decoration: underline;
+        }
+
+        /* --- Header / Navbar --- */
+        header {
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(8, 9, 13, 0.85);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #EF8805 0%, #D86F00 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 14px rgba(239, 136, 5, 0.35);
+        }
+
+        .brand-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: #FFFFFF;
+        }
+
+        .brand-name {
+            font-size: 20px;
+            font-weight: 800;
+            color: #FFFFFF;
+            letter-spacing: -0.3px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #9CA3AF;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .badge-btn {
+            background: rgba(239, 136, 5, 0.18);
+            border: 1px solid rgba(239, 136, 5, 0.4);
+            color: #EF8805 !important;
+            padding: 8px 18px;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .badge-btn::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            background: #EF8805;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #EF8805;
+        }
+
+        /* --- Main Content --- */
+        main {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 800;
+            color: #FFFFFF;
+            letter-spacing: -0.8px;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 15px;
+            color: #6B7280;
+            font-weight: 500;
+            margin-bottom: 44px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-top: 40px;
+            margin-bottom: 14px;
+            letter-spacing: -0.3px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #A1A7B5;
+            margin-bottom: 18px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 16px 0 24px;
+        }
+
+        li {
+            font-size: 16px;
+            color: #A1A7B5;
+            padding: 10px 14px;
+            margin-bottom: 8px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .contact-box {
+            background: rgba(239, 136, 5, 0.06);
+            border: 1px solid rgba(239, 136, 5, 0.25);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .contact-box p {
+            margin: 0;
+            color: #D1D5DB;
+        }
+
+        .contact-email {
+            color: #EF8805;
+            font-weight: 700;
+        }
+
+        /* --- Footer --- */
+        footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.07);
+            background: #050608;
+            padding: 60px 24px 40px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-desc {
+            font-size: 14px;
+            color: #6B7280;
+            margin-top: 12px;
+            max-width: 320px;
+        }
+
+        .footer-col h4 {
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            margin-bottom: 16px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .footer-col li {
+            background: none;
+            border: none;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: #9CA3AF;
+            font-size: 14px;
+        }
+
+        .footer-col a:hover {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: #4B5563;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+            h1 { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="nav-inner">
+            <a href="#" class="brand">
+                <div class="brand-icon">
+                    <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg>
+                </div>
+                <span class="brand-name">Magis TV</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <span class="badge-btn">Terms of Service</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Terms of Service</h1>
+        <div class="last-updated">Last updated: November 17, 2026</div>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>By downloading, installing, or using the Magis TV mobile application, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the application.</p>
+
+        <h2>2. Description of Service</h2>
+        <p>Magis TV is an informational movie and television show discovery guide. The app allows users to explore trending titles, read overviews, browse cast and crew details, watch official YouTube trailers, and manage personal watchlists.</p>
+
+        <h2>3. Intellectual Property &amp; Content Disclaimer</h2>
+        <p>• Magis TV does not host, upload, or directly stream any copyrighted media files. All video playback (such as trailers) is embedded directly from authorized platforms like YouTube via official public player interfaces.<br>
+        • All movie titles, descriptions, posters, and imagery are provided by The Movie Database (TMDb) and are licensed under CC BY-NC 4.0. This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
+
+        <h2>4. User Responsibilities &amp; Conduct</h2>
+        <p>You agree to use Magis TV exclusively for personal, non-commercial purposes. You agree not to attempt to reverse engineer, decompile, or tamper with the application or its underlying network infrastructure.</p>
+
+        <h2>5. Advertisements &amp; Third-Party Links</h2>
+        <p>The app displays advertisements powered by third-party ad networks (including Google AdMob, AppLovin, and Meta Audience Network) to keep the service free. Magis TV does not control and is not responsible for the products, services, or content displayed in third-party advertisements.</p>
+
+        <h2>6. Disclaimer of Warranties</h2>
+        <p>Magis TV is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, whether express or implied. We do not guarantee uninterrupted, error-free, or fully secure operation of the app at all times.</p>
+
+        <h2>7. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by applicable law, MAGIS TV LLC and its developers shall not be liable for any direct, indirect, incidental, or consequential damages resulting from your use of or inability to use the service.</p>
+
+        <h2>8. Contact Information</h2>
+        <div class="contact-box">
+            <p>If you have any questions regarding these Terms of Service, please reach out to us at: <a class="contact-email" href="mailto:info@magistv.com">info@magistv.com</a></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div>
+                    <div class="brand">
+                        <div class="brand-icon">
+                            <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg>
+                        </div>
+                        <span class="brand-name">Magis TV</span>
+                    </div>
+                    <p class="footer-desc">Your ultimate guide for movie &amp; TV show discoveries, ratings, and trailers.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="mailto:info@magistv.com">Contact Us</a></li>
+                        <li><a href="mailto:info@magistv.com">info@magistv.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 MAGIS TV LLC. All rights reserved.</div>
+                <div>Magis TV does not stream copyrighted video files directly. All metadata is provided by TMDb.</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
